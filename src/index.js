@@ -1,24 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// Nested component, React tools
+
 function Greeting() {
   return (
-    <>
-      <div>
-        <h1>Hello React</h1>
-        <ul>
-          <li>
-            <a href="#">Hello world</a>
-
-          </li>
-        </ul>
-      </div>
-    </>
+    <div>
+      <h2>Ansuman Patra</h2>
+      <p>Hello I'm Ansuman Patra</p>
+    </div>
   );
+
 }
 
-// const Greeting = () => {
-//   return React.createElement('div', {}, React.createElement('h1', {}, 'Hello react'));
-// }
 
 ReactDOM.render(<Greeting />, document.getElementById('root'));
