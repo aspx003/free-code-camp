@@ -1,19 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
 // Nested component, React tools
 
-function Greeting() {
+function BookList() {
   return (
-    <div>
-      <Person />
-      <Message />
-    </div>
+    <section>
+      <Book />
+    </section>
   );
 }
 
-const Person = () => <h2>Ansuman Patra</h2>;
-const Message = () => { return <p>Hello I'm Ansuman Patra</p> }
+const Book = () => {
+  return (
+    <article>
+      <Image />
+      <Title />
+      <Author />
+    </article>
+  );
 
+};
 
-ReactDOM.render(<Greeting />, document.getElementById('root'));
+const Image = () => {
+  return <img src="bookimg.jpeg" alt="Diary of a Wimpy Kid" />;
+};
+
+const Title = () => <h1>Title: Diary of a Wimpy Kid</h1>;
+const Author = () => <h3> Author: Jeff Kinney</h3>;
+
+ReactDOM.render(<BookList />, document.getElementById("root"));
