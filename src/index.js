@@ -6,12 +6,13 @@ import ReactDOM from 'react-dom';
 function Greeting() {
   return (
     <div>
-      <h2>Ansuman Patra</h2>
+      <Person />
       <p>Hello I'm Ansuman Patra</p>
     </div>
   );
-
 }
+
+const Person = () => <h2>Ansuman Patra</h2>;
 
 
 ReactDOM.render(<Greeting />, document.getElementById('root'));
