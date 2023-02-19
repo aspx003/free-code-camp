@@ -3,15 +3,17 @@ import ReactDOM from 'react-dom';
 
 function Greeting() {
   return (
-    <div>
-      <h1>Hello React</h1>
-      <ul>
-        <li>
-          <a href="#">Hello world</a>
+    <React.Fragment>
+      <div>
+        <h1>Hello React</h1>
+        <ul>
+          <li>
+            <a href="#">Hello world</a>
 
-        </li>
-      </ul>
-    </div>
+          </li>
+        </ul>
+      </div>
+    </React.Fragment>
   );
 }
 
