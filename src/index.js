@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 function Greeting() {
   return (
-    <React.Fragment>
+    <>
       <div>
         <h1>Hello React</h1>
         <ul>
@@ -13,7 +13,7 @@ function Greeting() {
           </li>
         </ul>
       </div>
-    </React.Fragment>
+    </>
   );
 }
 
