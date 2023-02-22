@@ -22,8 +22,6 @@ body {
 @media screen and (min-width: 768px) {
   .book-list {
     grid-template-columns: repeat(3, 1fr);
-    /* 2nd paragraph not stretched anymore */
-    align-items: start;
   }
 }
 
